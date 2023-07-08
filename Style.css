@@ -74,12 +74,20 @@ navbar a.active{
     color:var(--text-color);
     display: none;
 }
+/* ======================Home Animation css code========================== */
+#particles-js{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
 
 /* ======================Home section========================== */
 
 .home{
-    display:flex;
-   
+    /* display:flex; */
     justify-content: center;
     text-align:center;
     color:var(--text-color);
@@ -141,6 +149,7 @@ color:var(--bg-color);
 box-shadow:none;
 
 }
+
 
  /* Rules & FAQs section  */
 
