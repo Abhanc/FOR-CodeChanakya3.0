@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color:vor(--text-color);
+
+}
+section{
+    min-height:100vh;
+    display:flex;
+    /* min-width:100vw;
+    width:100vw; */
+    padding:10rem 9% 2rem;
+}
+
+/* Header section  */
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:2rem 9%;
+    background:var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:100;
+}
+.header.sticky{
+    border-bottom: 1rem solid /* rgba(0,0,0,.2); */
+}
+
+.logo{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+
+}
+.navbar a{
+    font-size:1.7rem;
+    color:var(--text-color);
+    margin-left:4rem;
+    transition:.3s;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color:var(--main-color);
+}
+navbar a.active{
+    color:var(--main-color);
+}
+
+#menu-icon{
+    font-size:3.6rem;
+    color:var(--text-color);
+    display: none;
+}
+
+/* ======================Home section========================== */
+
+.home{
+    display:flex;
+   
+    justify-content: center;
+    text-align:center;
+    color:var(--text-color);
+    z-index:100; 
+
+}
+.home-content{
+    overflow:none; 
+    margin-top:250px;
+}
+
+.home-content p{
+    font-size:1.5rem;
+    
+}
+.home-content h1{
+    font-size:  5rem;
+    font-weight: 100;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom:8px;
+}
+.social-links a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    text-align: left;
+    width:4rem;
+    height:4rem;
+    background:transparent;
+    text-decoration: none;
+    border: .2rem solid var(--main-color);
+    border-radius:50%;
+    font-size:2rem;
+    color:var(--main-color);
+    transition: .5s;
+
+}
+.social-links a:hover{
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow:0 0 1rem;
+}
+.btn{
+    display:inline-block;
+    padding:1rem 2.8 rem;
+    background:var(--main-color);
+    border-radius:4rem;
+    box-shadow:0 0 1rem var(--main-color);
+    text-decoration:none;
+    margin-top:2.1rem;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    font-weight:600;
+    transition: .5s ease;
+}
+.btn:hover{
+background:var(--main-color);
+color:var(--bg-color);
+box-shadow:none;
+
+}
+
+ /* Rules & FAQs section  */
+
+.Rules-FAQs{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    color: var(--text-color);
+    background:var(--second-bg-color);
+    /* margin-top:200px; */
+}
+.content{
+    text-align:justify;
+    font-size:2.5rem;
+    /* letter-spacing: .1rem; */
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+ .Rule-div{
+    background-color:#c3c4c6;
+    box-shadow:1rem;
+    padding:3rem;
+    margin-top:2rem;
+
+ }
+.Rule-div h1{
+    color:var(--bg-color);
+    font-size:5rem;
+    margin:0 5rem 5rem 0;
+}
+.Rule-div p{
+    color:var(--bg-color);
+}
+.Qitem{
+    border:.2rem solid var(--main-color);
+    height:100%;
+    margin: 2rem 0 0 3rem;
+}
+.Qitem h1{
+    font-size:5rem;
+    margin:3rem 5rem 5rem 4rem;
+}
+.Qitem div{
+    margin:4rem;
+    border-bottom:.2rem ridge var(--text-color);
+}
+
+/* BREAKPOINTS */
+@media(max-width:1200px){
+    html{
+        font-size:55%;
+    }
+}
+@media(max-width:991px){
+    .header{
+        padding:2rem 3%;
+    }
+
+}
+section{
+    padding:10rem 3% 2rem;
+}
+@media(max-width:572px){
+    .Qitem{
+        margin: 2rem 0 0 0;
+    }
+    .Rule-div{
+        margin-top:0;
+    }
+}
+
+@media(max-width:852px){
+    #menu-icon{
+        display: block;
+    }
+.navbar{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    padding:1rem 3%;
+    background:var(--bg-color);
+    border-top:.1rem solid rgba(0,0,0,.2);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.2);
+    display:none;
+
+}
+
+/* .navbar.active{
+    display:block;
+} */
+.navbar a{
+    display:block;
+    font-size:2rem;
+    margin:3rem;
+    display:block;
+}
+}
