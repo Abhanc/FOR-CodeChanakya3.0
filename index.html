@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeChanakya3.O</title>
-    bootstrap css link
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
+    <!-- bootstrap css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
@@ -46,7 +49,7 @@
     <section class="home" id="home">
         <!-- particles.js container -->
         <div id="particles-js"></div>
-        
+
         <div class="home-content">
             <div class="Organizers-logos">
                 <img src="images/ugiLogo.jpg" alt="image">
@@ -54,6 +57,9 @@
                 <img src="images/AktuLogo.jpg" alt="image">
             </div>
             <h1>CodeChanakya3.O</h1>
+            <div class="another-text">Join us for the</div>
+            <div class="text"></div>
+            <div class="another-text " id="HAKETHON">HACKATHON</div>
             <p>THE BIGGEST GURU-MANTRA IS: <br> NEVER SHARE YOUR SECRETS(CODE) WITH ANYBODY. <br> IT WILL DESTROY YOU.
             </p>
 
@@ -112,10 +118,19 @@
     <!-- Contacts section design -->
     <!--  Sponsors section design-->
 
-
-    <script src="js/particles.min.js"></script>
-    <script src="js/custom.js"></script>
-
 </body>
 
 </html>
+<script>
+    // ================= text animation ===============
+
+    var typing = new Typed(".text", {
+        strings: ["", "largest", "remarkable", "extraordinary", "delightful", "congenial"],
+        typeSpeed: 100,
+        backSpeed: 40,
+        loop: true,
+    });
+</script>
+
+<script src="js/particles.min.js"></script>
+<script src="js/custom.js"></script>

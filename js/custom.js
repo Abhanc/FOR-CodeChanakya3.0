@@ -1,9 +1,6 @@
-// ================= toggle icon navbar ===============
 
-Window.onload=()=>{
-    alert("I am here");
-    document.querySelector(".header").style.background="none";
-}
+
+// ================= toggle icon navbar ===============
     let menuIcon = document.querySelector('#menu-icon');
     let navbar = document.querySelector('.navbar');
 
@@ -53,7 +50,7 @@ header.classList.toggle('sticky', window.scrollY > 100);
 particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 100,
+        "value": 90,
         "density": {
           "enable": true,
           "value_area": 800
@@ -181,3 +178,4 @@ particlesJS("particles-js", {
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+
