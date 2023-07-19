@@ -155,7 +155,7 @@ navbar a.active {
     margin-bottom: 8px;
 }
 
-.social-links a {
+ .social-links a, .social-links-of-team a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -198,14 +198,125 @@ navbar a.active {
     box-shadow: none;
 
 }
+/* ==================== Gallery section =================== */
 
-
-/* Rules & FAQs section  */
-
-.Rules-FAQs {
+.Gallery{
     display: flex;
     justify-content: center;
     text-align: center;
+    color: var(--text-color);
+    background-color: var(--second-bg-color);
+}
+
+.gallery-images{
+    width:300px;
+     height:150px;
+    margin:10px;
+    border:.1rem solid var(--main-color);
+    box-shadow: 0 3px 10px var(--main-color);
+    overflow:hidden;
+    transition: .5s;
+}
+.gallery-images:hover {
+    transform: scale(1.08);
+      overflow: hidden;
+}
+.img-gallery-container{
+}
+/* #gallery-row{
+    background:var(--bg-color);
+} */
+
+.Gallery-cotainer h1, .Teamh1 {
+    font-size: 5rem;
+    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+
+}
+
+
+
+/* ==================== Team Section =================== */
+.Team{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    z-index: 100;
+}
+.Team-container{
+    justify-content: center;
+    text-align: center;
+}
+
+.team-card {
+    display:flex;
+    width: 300px;
+    height: 400px;
+    /* perspective: 1000px; */
+    background: var(--second-bg-color);
+    justify-content: center;
+    margin:auto;
+    margin-bottom: 15px;
+
+  }
+  
+  .card-inner {
+    width: 290px;
+    height: 390px;
+    background-color:var(--second-bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 10px var(--main-color);
+    transition: 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+    .card-inner:hover {
+
+        transform: scale(1.05);
+      overflow: hidden;
+  }
+  
+  .team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px var(--main-color);
+
+  }
+  /* #social-links-of-team a{
+    border:.2rem solid rgb(0, 110, 255);
+    color:rgb(0, 110, 255);
+  }
+  #social-links-of-team a:hover{
+    background-color:rgb(0, 110, 255) ;
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem;
+  } */
+  
+  .team-card h3, .team-card h1 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .team-card p {
+    color:var(--text-color);
+    font-size:1.3rem;
+
+  }
+  
+ 
+
+.Rules-FAQs {
+    display:flex;
+    justify-content:center;
+    text-align:center;
     color: var(--text-color);
     background: var(--second-bg-color);
     /* margin-top:200px; */
@@ -252,6 +363,38 @@ navbar a.active {
     margin: 4rem;
     border-bottom: .2rem ridge var(--text-color);
 }
+
+/* ==================== Contact section css code =================== */
+.contact-section {
+    background-color:var(--bg-color);
+    padding: 80px 0;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .section-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 10px var(--main-color);
+    border-radius: 4px;
+    resize: vertical;
+    
+  }
+  
+ 
+
 
 /* BREAKPOINTS */
 @media(max-width:1200px) {

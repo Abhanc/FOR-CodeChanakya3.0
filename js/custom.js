@@ -44,6 +44,48 @@ Window.onscroll = () => {
 let header = document.querySelector('header');
 header.classList.toggle('sticky', window.scrollY > 100);
 
+
+
+/* ---- For Gallery section-------================================ */
+
+
+
+/* ---- For Contact Section-------================================ */
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  // Fetch form data
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  function sendEmail() {
+    Email.send({
+    Host: "smtp.gmail.com",
+    Username : "name",
+    // Password : "<email password>"
+    To : 'uim.abhishek.yadav@gmail.com',
+    From : "email",
+    Subject : "new enqiry",
+    Body : "massage",
+    }).then(
+      message => alert("mail sent successfully")
+    );
+  }
+
+  // Perform form validation here if needed
+
+  // Send the form data to your server or perform any desired action
+  // For this example, we'll just log the data to the console
+  console.log('Name: ' + name);
+  console.log('Email: ' + email);
+  console.log('Message: ' + message);
+
+  // Reset the form fields
+  document.getElementById('contact-form').reset();
+});
+
     
 /* ---- particles.js config -------================================ */
 
@@ -103,7 +145,7 @@ particlesJS("particles-js", {
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 1,
         "direction": "none",
         "random": false,
         "straight": false,
