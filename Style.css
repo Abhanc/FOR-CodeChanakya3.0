@@ -241,30 +241,46 @@ navbar a.active {
 .Team{
     display: flex;
     justify-content: center;
-    text-align: center;
-    color: var(--text-color);
-    z-index: 100;
+    /* text-align: center; */
+    color: var(--text-color); 
+    
+    /* z-index: 100; */
 }
 .Team-container{
     justify-content: center;
     text-align: center;
 }
 
-.team-card {
+.Teamh1{
+    margin-bottom: 40px;
+    padding-top:0;
+    color: var(--text-color);
+    z-index: 100;
+}
+.team-carousel{
+    width: 300px;
+    height: 400px;
+    margin:auto;
+}
+
+ .team-card {
     display:flex;
     width: 300px;
     height: 400px;
-    /* perspective: 1000px; */
-    background: var(--second-bg-color);
+    padding:5px 9px 9px 9px;
+     /* perspective: 1000px; */
+    background: var(--bg-color);
     justify-content: center;
     margin:auto;
     margin-bottom: 15px;
 
-  }
-  
+   } 
+   
   .card-inner {
     width: 290px;
     height: 390px;
+    padding:20px;
+    margin:0;
     background-color:var(--second-bg-color);
     color: var(--text-color);
     display: flex;
@@ -276,11 +292,7 @@ navbar a.active {
     transform-style: preserve-3d;
   }
   
-    .card-inner:hover {
-
-        transform: scale(1.05);
-      overflow: hidden;
-  }
+  
   
   .team-card img {
     width: 150px;
@@ -290,6 +302,7 @@ navbar a.active {
     box-shadow: 0 3px 10px var(--main-color);
 
   }
+
   /* #social-links-of-team a{
     border:.2rem solid rgb(0, 110, 255);
     color:rgb(0, 110, 255);
@@ -311,8 +324,59 @@ navbar a.active {
 
   }
   
- 
+  /* .Team-section-Animation */
 
+  .hacking-window {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:var(--bg-color);
+    color: lime;
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    box-shadow: 0 3px 10px var(--main-color);
+
+  }
+  
+  .hacking-text {
+    white-space:pre-wrap;
+    font-size: 4rem;
+    box-shadow: 0 3px 10px var(--main-color);
+    animation: typing 5s steps(1000) infinite, blink-caret 0.75s step-end infinite;
+    text-shadow: 0 3px 10px var(--main-color);
+
+  }
+  
+  @keyframes typing {
+    from {
+      width:0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color:var(--main-color);
+      
+
+    }
+  }
+  
+  
+  
+ 
+/* ===================== For Rules-FAQs ================= */
 .Rules-FAQs {
     display:flex;
     justify-content:center;
@@ -375,6 +439,10 @@ navbar a.active {
     margin: 0 auto;
   }
   
+  .contact-form p{
+    color:var(--text-color);
+  }
+  
   .section-heading {
     font-size: 36px;
     margin-bottom: 20px;
@@ -408,12 +476,19 @@ navbar a.active {
         padding: 2rem 3%;
     }
 
-}
+
 
 section {
     padding: 10rem 3% 2rem;
 }
 
+.hacking-text{
+    position:absolute;
+    bottom:100px;
+    animation: typing 4s steps(40) infinite, blink-caret 0.75s step-end infinite;
+
+}
+}
 @media(max-width:572px) {
     .Qitem {
         margin: 2rem 0 0 0;
@@ -426,6 +501,7 @@ section {
     #HAKETHON{
         display:block;
     }
+
 }
 
 @media(max-width:852px) {
@@ -456,3 +532,28 @@ section {
         display: block;
     }
 }
+
+
+
+
+/* eXtra+++++++++++++++\ */
+/* Optional: Add any custom styles for the gallery section here */
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
