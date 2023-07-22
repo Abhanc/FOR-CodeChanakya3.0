@@ -484,7 +484,7 @@ section {
 
 .hacking-text{
     position:absolute;
-    bottom:100px;
+    bottom:50px;
     animation: typing 4s steps(40) infinite, blink-caret 0.75s step-end infinite;
 
 }
